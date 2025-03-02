@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-off-black: #272522;
+  --color-off-black-light: #3d3b39;
+  --color-off-white: #f8f8f2;
+}
+
+@font-face {
+  font-family: PPMondwest;
+  src: url("./fonts/PPMondwest-Regular.otf");
+}
+
+@font-face {
+  font-family: PPNeueMontreal;
+  src: url("./fonts/PPNeueMontreal-Variable.ttf");
+}
+
+@font-face {
+  font-family: PPNeueBit;
+  src: url("./fonts/PPNeueBit-Regular.woff");
+  ascent-override: -0.1;
+}
+
+@font-face {
+  font-family: PPNeueBit;
+  font-weight: bold;
+  src: url("./fonts/PPNeueBit-Bold.woff");
+  ascent-override: 66%;
+}
+
+.montreal {
+  font-family: PPNeueMontreal, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.bit {
+  font-family: PPNeueBit, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.mondwest {
+  font-family: PPMondwest, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+:root {
+  font-family: PPNeueBit, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: PPMondwest, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  --background: var(--color-off-black);
+  --foreground: var(--color-off-white);
+}
+
+body {
+  background: var(--background);
+  background: linear-gradient(45deg, hsla(0, 0%, 0%, 1) 0%, hsl(50deg 92.38% 6.22%) 100%);
+
+  color: var(--foreground);
+}
